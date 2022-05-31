@@ -5,7 +5,7 @@ import developerGuy from '../public/static/img/developer-guy.png'
 import { styled } from '../stitches.config'
 import { Wrapper } from '../components/Wrapper'
 import { PostMain } from '../components/Post'
-import { KBarProvider } from 'kbar'
+import { ButtonCommand } from '../components/ButtonCommand'
 
 const Home: NextPage = () => {
   return (
@@ -24,23 +24,23 @@ const Home: NextPage = () => {
           <GradientTitle
             css={{
               backgroundImage: `linear-gradient(
-                135deg,
-                #0061ff 0%,
-                #60efff 100%
+                180deg, 
+                rgba(67, 156, 251, 0.69) 0%, 
+                rgba(241, 135, 251, 0.2553) 84.9%
               );`,
             }}
           >
             Diogo Machado
           </GradientTitle>
-          <p>
-            Frontend Engineer with 10+ experience building amazing products for
-            web.
-          </p>
-          <ButtonCommand>Press here to start</ButtonCommand>
+          <DescriptionMain>
+            Senior Frontend Engineer with 10+ experience building amazing
+            products for web.
+          </DescriptionMain>
+          <ButtonCommand />
         </AboutContainer>
         <Image
           layout="intrinsic"
-          width={593}
+          width={455}
           height={593}
           src={developerGuy}
           alt="Developer Guy"
@@ -49,6 +49,11 @@ const Home: NextPage = () => {
     </Wrapper>
   )
 }
+
+const DescriptionMain = styled('p', {
+  lineHeight: '28px',
+  letterSpacing: '-0.04em',
+})
 
 const GradientTitle = styled('h1', {
   backgroundSize: '100%',
@@ -71,10 +76,6 @@ const HomeContainer = styled(PostMain, {
   display: 'flex',
   margin: '0 auto',
   '@bp2': { width: 980 },
-})
-
-const ButtonCommand = styled('button', {
-  backgroundColor: 'blue',
 })
 
 export default Home

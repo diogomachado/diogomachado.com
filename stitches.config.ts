@@ -14,7 +14,12 @@ export const {
     colors: {
       white: '#fff',
       background: '#11001C',
+      secondary: '#F5F5F5',
       textColor: 'rgba(255, 255, 255, 0.38)',
+      hover: '#212024',
+    },
+    transitions: {
+      duration: '0.2s',
     },
     fonts: {
       body: 'JetBrains Mono, monospace;',
@@ -38,6 +43,15 @@ const globalStyles = globalCss({
     padding: '0',
     WebkitFontSmoothing: 'antialiased',
     background: '$background',
+  },
+  kbd: {
+    color: '$background',
+    background: '$secondary',
+    padding: '1px 5px',
+    borderRadius: '4px',
+    transition: 'background $duration ease-in-out',
+    fontFamily: '$code',
+    fontSize: '14px',
   },
   h1: {
     fontFamily: 'JetBrains Mono ExtraBold, monospace;',
