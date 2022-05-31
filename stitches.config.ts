@@ -13,10 +13,13 @@ export const {
   theme: {
     colors: {
       white: '#fff',
+      blue: 'rgba(67, 156, 251, 0.69)',
+      purple: 'rgba(241, 135, 251, 0.2553)',
       background: '#11001C',
       secondary: '#F5F5F5',
       textColor: 'rgba(255, 255, 255, 0.38)',
       hover: '#212024',
+      command: 'rgba(255, 255, 255, 0.05)',
     },
     transitions: {
       duration: '0.2s',

@@ -6,6 +6,7 @@ import { styled } from '../stitches.config'
 import { Wrapper } from '../components/Wrapper'
 import { PostMain } from '../components/Post'
 import { ButtonCommand } from '../components/ButtonCommand'
+import { motion } from 'framer-motion'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
           name="description"
           content="Frontend Engineer with 10+ experience building amazing products for web."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <HomeContainer>
@@ -25,8 +26,8 @@ const Home: NextPage = () => {
             css={{
               backgroundImage: `linear-gradient(
                 180deg, 
-                rgba(67, 156, 251, 0.69) 0%, 
-                rgba(241, 135, 251, 0.2553) 84.9%
+                $blue 0%, 
+                $purple 84.9%
               );`,
             }}
           >
@@ -38,17 +39,27 @@ const Home: NextPage = () => {
           </DescriptionMain>
           <ButtonCommand />
         </AboutContainer>
-        <Image
-          layout="intrinsic"
-          width={455}
-          height={593}
-          src={developerGuy}
-          alt="Developer Guy"
-        />
+
+        <ImageWrapper
+          animate={{ x: 100 }}
+          transition={{ type: 'spring', stiffness: 100 }}
+        >
+          <Image
+            layout="intrinsic"
+            width={455}
+            height={593}
+            src={developerGuy}
+            alt="Developer Guy"
+          />
+        </ImageWrapper>
       </HomeContainer>
     </Wrapper>
   )
 }
+
+const ImageWrapper = styled(motion.div, {
+  position: 'relative',
+})
 
 const DescriptionMain = styled('p', {
   lineHeight: '28px',

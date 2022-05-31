@@ -31,7 +31,7 @@ export default function CommandBar(props) {
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
-      perform: () => window.open('mailto:zno.rocha@gmail.com', '_blank'),
+      perform: () => window.open('mailto:diogo@diogomachado.com', '_blank'),
       icon: <Icon className="ri-mail-line" />,
     },
     {
@@ -188,7 +188,7 @@ const Search = styled(KBarSearch, {
   border: 'none',
   margin: 0,
   background: '$command',
-  color: '$primary',
+  color: '$white',
 })
 
 const GroupName = styled('div', {
@@ -233,7 +233,7 @@ const Animator = styled(KBarAnimator, {
   backgroundColor: '#1a1c1e',
   maxWidth: '600px',
   width: '100%',
-  color: '$primary',
+  color: '$textColor',
   borderRadius: '8px',
   overflow: 'hidden',
   '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))': {
@@ -252,6 +252,6 @@ const getResultStyle = active => {
     justifyContent: 'space-between',
     margin: 0,
     cursor: 'pointer',
-    color: active ? '$primary' : '$secondary',
+    color: active ? '$blue' : '$secondary',
   }
 }
