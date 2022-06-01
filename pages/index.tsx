@@ -41,16 +41,10 @@ const Home: NextPage = () => {
         </AboutContainer>
 
         <ImageWrapper
-          animate={{ x: 100 }}
+          animate={{ x: 0 }}
           transition={{ type: 'spring', stiffness: 100 }}
         >
-          <Image
-            layout="intrinsic"
-            width={455}
-            height={593}
-            src={developerGuy}
-            alt="Developer Guy"
-          />
+          <Image layout="responsive" src={developerGuy} alt="Developer Guy" />
         </ImageWrapper>
       </HomeContainer>
     </Wrapper>
@@ -59,6 +53,10 @@ const Home: NextPage = () => {
 
 const ImageWrapper = styled(motion.div, {
   position: 'relative',
+  width: '100%',
+  '@bp2': {
+    width: '50%',
+  },
 })
 
 const DescriptionMain = styled('p', {
@@ -79,14 +77,15 @@ const GradientTitle = styled('h1', {
 const AboutContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  flexBasis: '42%',
+  padding: '12px',
+  '@bp3': { flexBasis: '42%' },
 })
 
 const HomeContainer = styled(PostMain, {
   alignItems: 'center',
   display: 'flex',
   margin: '0 auto',
-  '@bp2': { width: 980 },
+  '@bp2': { width: 980, flexDirection: 'row' },
 })
 
 export default Home

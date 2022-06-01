@@ -1,10 +1,14 @@
 import { styled } from '../stitches.config'
 
 export const PostMain = styled('main', {
-  '@bp2': { padding: '$navHeightDesktop 0' },
+  '@bp2': {
+    padding: '$navHeightDesktop 0',
+    flex: '1 1',
+    flexDirection: 'column',
+  },
   padding: '$navHeightMobile 0',
   overflow: 'hidden',
-  flex: '1 1',
+  flexDirection: 'column-reverse',
 })
 
 export const Post = styled('main', {

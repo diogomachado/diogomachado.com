@@ -24,6 +24,10 @@ export const {
     transitions: {
       duration: '0.2s',
     },
+    space: {
+      navHeightDesktop: '60px',
+      navHeightMobile: '0px',
+    },
     fonts: {
       body: 'JetBrains Mono, monospace;',
     },
@@ -59,8 +63,9 @@ const globalStyles = globalCss({
   h1: {
     fontFamily: 'JetBrains Mono ExtraBold, monospace;',
     color: '$white',
-    fontSize: '50px',
+    fontSize: '40px',
     margin: '0px',
+    '@bp2': { fontSize: '50px' },
   },
   p: {
     color: '$textColor',

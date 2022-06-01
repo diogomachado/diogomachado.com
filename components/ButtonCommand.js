@@ -37,6 +37,7 @@ export function ButtonCommand() {
 }
 
 export const ButtonWrapper = styled('button', {
+  outline: 'none',
   background: 'none',
   border: 'none',
   color: '$white',
