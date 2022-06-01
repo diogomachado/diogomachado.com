@@ -23,6 +23,13 @@ const Home: NextPage = () => {
       <HomeContainer>
         <AboutContainer>
           <GradientTitle
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 1,
+              type: 'tween',
+            }}
             css={{
               backgroundImage: `linear-gradient(
                 180deg, 
@@ -41,8 +48,8 @@ const Home: NextPage = () => {
         </AboutContainer>
 
         <ImageWrapper
-          animate={{ x: 0 }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          animate={{ y: 20 }}
+          transition={{ type: 'spring', stiffness: 20 }}
         >
           <Image layout="responsive" src={developerGuy} alt="Developer Guy" />
         </ImageWrapper>
@@ -53,7 +60,7 @@ const Home: NextPage = () => {
 
 const ImageWrapper = styled(motion.div, {
   position: 'relative',
-  width: '100%',
+  width: '85%',
   '@bp2': {
     width: '50%',
   },
@@ -64,7 +71,7 @@ const DescriptionMain = styled('p', {
   letterSpacing: '-0.04em',
 })
 
-const GradientTitle = styled('h1', {
+const GradientTitle = styled(motion.h1, {
   backgroundSize: '100%',
   backgroundClip: 'text',
   WebkitBackgroundClip: 'text',
