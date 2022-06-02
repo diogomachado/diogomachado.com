@@ -6,6 +6,7 @@ import { styled } from '../stitches.config'
 import { Wrapper } from '../components/Wrapper'
 import { PostMain } from '../components/Post'
 import { ButtonCommand } from '../components/ButtonCommand'
+import NavBar from '../components/NavBar'
 import { motion } from 'framer-motion'
 
 const Home: NextPage = () => {
@@ -19,6 +20,8 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
+
+      <NavBar />
 
       <HomeContainer>
         <AboutContainer>

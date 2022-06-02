@@ -24,6 +24,9 @@ export const {
     transitions: {
       duration: '0.2s',
     },
+    radii: {
+      borderRadius: '8px',
+    },
     space: {
       navHeightDesktop: '60px',
       navHeightMobile: '0px',
@@ -69,6 +72,15 @@ const globalStyles = globalCss({
   },
   p: {
     color: '$textColor',
+  },
+  a: {
+    borderBottom: '1px solid $primary',
+    color: '$primary',
+    textDecoration: 'none',
+    transition: 'opacity $duration ease-in-out',
+  },
+  'a:hover, a:focus': {
+    opacity: '0.8',
   },
   '@font-face': [
     {

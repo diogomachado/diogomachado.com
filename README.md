@@ -11,5 +11,6 @@ yarn dev
 ## Tools
 
 - https://nextjs.org/
-- https://stitches.dev/
-- https://www.framer.com/docs/motionvalue/
+- CSS in JS: https://stitches.dev/
+- Animations: https://www.framer.com/docs/motionvalue/
+- Icons: https://remixicon.com/
