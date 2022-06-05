@@ -10,11 +10,12 @@ export default function Navbar() {
   const pages = [
     {
       title: 'Articles',
-      icon: 'ri-article-line',
+      icon: 'ri-terminal-box-fill',
     },
     {
-      title: 'Courses',
-      icon: 'ri-book-open-line',
+      title: 'Resume',
+      icon: 'ri-file-text-line',
+      link: '/static/document/resume-diogomachado-v.5.jun.22.pdf',
     },
   ]
   const [hovered, setHovered] = useState('')
@@ -23,14 +24,18 @@ export default function Navbar() {
   return (
     <AnimateSharedLayout>
       <Header>
-        <Link href="/" passHref>
-          <ButtonLogo as="a">D</ButtonLogo>
-        </Link>
+        <OnlyDesktop>
+          <Link href="/" passHref>
+            <ButtonLogo as="a">D</ButtonLogo>
+          </Link>
+        </OnlyDesktop>
 
         <Nav>
           <List>
             {pages.map(page => {
-              const path = `/${page.title.toLowerCase()}`
+              const path = page.link
+                ? page.link
+                : `/${page.title.toLowerCase()}`
               const isHovered = hovered === page.title
 
               return (
@@ -71,21 +76,30 @@ export default function Navbar() {
           </List>
         </Nav>
 
-        <Aside>
-          <ButtonHeader
-            as="button"
-            type="button"
-            aria-label="Command"
-            onClick={query.toggle}
-            css={{ padding: '0 8px' }}
-          >
-            <Icon className="ri-command-line" />
-          </ButtonHeader>
-        </Aside>
+        <OnlyDesktop>
+          <Aside>
+            <ButtonHeader
+              as="button"
+              type="button"
+              aria-label="Command"
+              onClick={query.toggle}
+              css={{ padding: '0 8px' }}
+            >
+              <Icon className="ri-command-line" />
+            </ButtonHeader>
+          </Aside>
+        </OnlyDesktop>
       </Header>
     </AnimateSharedLayout>
   )
 }
+
+const OnlyDesktop = styled('div', {
+  display: 'none',
+  '@bp2': {
+    display: 'flex',
+  },
+})
 
 const Header = styled('header', {
   display: 'flex',
@@ -98,7 +112,6 @@ const Header = styled('header', {
   position: 'absolute',
   top: '0',
   zIndex: 3,
-  marginTop: '13px',
   '@bp2': { marginTop: '0' },
 })
 

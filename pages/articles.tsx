@@ -22,10 +22,7 @@ const Articles: NextPage<PropsArticle> = props => {
     <>
       <Head>
         <title>Articles // Diogo Machado </title>
-        <meta
-          name="description"
-          content="Frontend Engineer with 10+ experience building amazing products for web."
-        />
+        <meta name="description" content="Articles written by Diogo Machado" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

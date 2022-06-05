@@ -31,7 +31,7 @@ export const {
     },
     space: {
       navHeightDesktop: '60px',
-      navHeightMobile: '0px',
+      navHeightMobile: '50px',
     },
     fonts: {
       body: 'JetBrains Mono, monospace;',
