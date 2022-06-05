@@ -1,13 +1,30 @@
+import type { ReactElement, ReactNode } from 'react'
+import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import CommandBar from '../components/CommandBar'
 import 'remixicon/fonts/remixicon.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <CommandBar>
-      <Component {...pageProps} />
-    </CommandBar>
-  )
+type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode
 }
 
-export default MyApp
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+const Noop = ({ children }: any) => children
+
+export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  // Use the layout defined at the page level, if available
+  const Layout = Component.getLayout || Noop
+
+  return (
+    <>
+      <CommandBar>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </CommandBar>
+    </>
+  )
+}

@@ -15,6 +15,8 @@ export const {
       white: '#fff',
       blue: 'rgba(67, 156, 251, 0.69)',
       purple: 'rgba(241, 135, 251, 0.2553)',
+      yellow: 'rgba(255, 255, 0, 0.69)',
+      pink: 'rgba(255, 0, 255, 0.69)',
       background: '#11001C',
       secondary: '#F5F5F5',
       textColor: 'rgba(255, 255, 255, 0.38)',

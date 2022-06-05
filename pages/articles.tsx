@@ -2,6 +2,8 @@ import { getPosts } from '../lib/posts'
 
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
+import { ReactElement, ReactNode } from 'react'
+import Base from '../layouts/Base'
 
 type PropsArticleItem = {
   id: string
@@ -42,7 +44,16 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
 
-  return { props: { posts } }
+  return {
+    props: {
+      tagline: 'Code. Thoughts.',
+      primaryColor: 'yellow',
+      secondaryColor: 'pink',
+      posts,
+    },
+  }
 }
+
+Articles.getLayout = Base
 
 export default Articles
