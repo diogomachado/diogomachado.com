@@ -84,6 +84,33 @@ const globalStyles = globalCss({
   'a:hover, a:focus': {
     opacity: '0.8',
   },
+  figure: {
+    margin: '0',
+  },
+  img: {
+    maxWidth: '100%',
+  },
+  code: {
+    background: '#151417',
+    borderRadius: '$borderRadius',
+    color: '$primary',
+    fontFamily: '$code',
+    fontSize: '15px',
+  },
+  ':not(pre) > code': {
+    padding: '4px',
+  },
+  blockquote: {
+    borderLeft: '4px solid $hover',
+    color: '$secondary',
+    fontStyle: 'italic',
+    margin: '0',
+    paddingLeft: '20px',
+  },
+  iframe: {
+    width: '100%',
+    minHeight: '480px',
+  },
   '@font-face': [
     {
       fontFamily: 'JetBrains Mono',

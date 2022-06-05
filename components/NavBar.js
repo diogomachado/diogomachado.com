@@ -174,19 +174,6 @@ const NavContainer = styled(motion.span, {
   '&:hover': {
     color: '$primary',
   },
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    margin: '0px auto',
-    top: '0px',
-    left: '0px',
-    right: '0px',
-    height: '1px',
-    width: '20px',
-    background: 'rgb(255, 255, 255)',
-    opacity: 0,
-    transition: 'opacity $duration ease-in-out',
-  },
 })
 
 const NavHovered = styled(motion.span, {
