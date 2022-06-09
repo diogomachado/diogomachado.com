@@ -20,13 +20,13 @@ interface Post {
 
 // PostPage page component
 const PostPage = (props: PropsGhostPost) => {
-  console.log(props)
-
   // Render post title and content in the page from props
   return (
     <>
       <Head>
-        <title>{props.post.title} // Diogo Machado</title>
+        <title>
+          {props.post.title} {`//`} Diogo Machado
+        </title>
         <meta content={props.post.title} property="og:title" />
         <meta content={props.post.excerpt} name="description" />
         <link rel="icon" href="/favicon.png" />
