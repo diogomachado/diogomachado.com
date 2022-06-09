@@ -5,18 +5,34 @@ import Head from 'next/head'
 import BlogDate from '../../components/BlogDate'
 import { styled } from '../../stitches.config'
 
+interface PropsGhostPost {
+  post: Post
+}
+
+interface Post {
+  title: string
+  excerpt: string
+  slug: string
+  html: string
+  canonical_url: string
+  published_at: string
+}
+
 // PostPage page component
-const PostPage = props => {
+const PostPage = (props: PropsGhostPost) => {
+  console.log(props)
+
   // Render post title and content in the page from props
   return (
     <>
       <Head>
-        <title>{props.title}</title>
-        <meta content={props.title} property="og:title" />
-        <meta content={props.description} name="description" />
+        <title>{props.post.title} // Diogo Machado</title>
+        <meta content={props.post.title} property="og:title" />
+        <meta content={props.post.excerpt} name="description" />
+        <link rel="icon" href="/favicon.png" />
 
-        {props.canonical_url && (
-          <link rel="canonical" href={props.canonical_url} />
+        {props.post.canonical_url && (
+          <link rel="canonical" href={props.post.canonical_url} />
         )}
       </Head>
 
@@ -32,7 +48,7 @@ export async function getStaticPaths() {
   const posts = await getPosts()
 
   // Get the paths we want to create based on posts
-  const paths = posts.map(post => ({
+  const paths = posts.map((post: Post) => ({
     params: { slug: post.slug },
   }))
 

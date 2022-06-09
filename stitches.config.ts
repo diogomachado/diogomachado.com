@@ -75,6 +75,9 @@ const globalStyles = globalCss({
   p: {
     color: '$textColor',
   },
+  ul: {
+    color: '$textColor',
+  },
   a: {
     borderBottom: '1px solid $primary',
     color: '$primary',
