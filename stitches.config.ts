@@ -79,9 +79,9 @@ const globalStyles = globalCss({
     color: '$textColor',
   },
   a: {
-    borderBottom: '1px solid $primary',
-    color: '$primary',
+    color: '$white',
     textDecoration: 'none',
+    borderBottom: '1px $white solid',
     transition: 'opacity $duration ease-in-out',
   },
   'a:hover, a:focus': {
