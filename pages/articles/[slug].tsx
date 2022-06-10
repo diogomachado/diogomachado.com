@@ -12,42 +12,46 @@ interface PropsGhostPost {
 
 interface Post {
   title: string
-  feature_image: string
   excerpt: string
-  slug: string
-  html: string
   canonical_url: string
+  feature_image: string
+  slug?: string
+  html?: string
   published_at: string
   updated_at: string
 }
 
 // PostPage page component
 const PostPage = (props: PropsGhostPost) => {
-  const title = `${props.post.title} // Diogo Machado`
-  const description = props.post.excerpt || ''
-  const url = `https://diogomachado.com/articles/${props.post.slug}`
-  const image = props.post.feature_image
+  const seo: Post = {
+    title: `${props.post.title} // Diogo Machado`,
+    excerpt: props.post.excerpt || '',
+    canonical_url: `https://diogomachado.com/articles/${props.post.slug}`,
+    feature_image: props.post.feature_image,
+    published_at: props.post.published_at,
+    updated_at: props.post.updated_at,
+  }
 
   // Render post title and content in the page from props
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta content={title} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content={url} property="og:url" />
-        <meta content={image} property="og:image" />
+        <title>{seo.title}</title>
+        <meta content={seo.title} property="og:title" />
+        <meta content={seo.excerpt} name="description" />
+        <meta content={seo.excerpt} property="og:description" />
+        <meta content={seo.canonical_url} property="og:url" />
+        <meta content={seo.feature_image} property="og:image" />
 
         <ArticleJsonLd
           authorName="Diogo Machado"
           type="Blog"
-          url={url}
-          title={title}
-          images={[image]}
-          datePublished={props.post.published_at}
-          dateModified={props.post.updated_at}
-          description={description}
+          url={seo.canonical_url}
+          title={seo.title}
+          images={[seo.feature_image]}
+          datePublished={seo.published_at}
+          dateModified={seo.updated_at}
+          description={seo.excerpt}
         />
 
         <link rel="icon" href="/favicon.png" />
