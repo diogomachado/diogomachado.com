@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next/types'
+import { ArticleJsonLd } from 'next-seo'
 import { getSinglePost, getPosts } from '../../lib/posts'
 import Blogpost from '../../layouts/Blogpost'
 import Head from 'next/head'
@@ -11,24 +12,44 @@ interface PropsGhostPost {
 
 interface Post {
   title: string
+  feature_image: string
   excerpt: string
   slug: string
   html: string
   canonical_url: string
   published_at: string
+  updated_at: string
 }
 
 // PostPage page component
 const PostPage = (props: PropsGhostPost) => {
+  const title = `${props.post.title} // Diogo Machado`
+  const description = props.post.excerpt || ''
+  const url = `https://diogomachado.com/articles/${props.post.slug}`
+  const image = props.post.feature_image
+
   // Render post title and content in the page from props
   return (
     <>
       <Head>
-        <title>
-          {props.post.title} {`//`} Diogo Machado
-        </title>
-        <meta content={props.post.title} property="og:title" />
-        <meta content={props.post.excerpt} name="description" />
+        <title>{title}</title>
+        <meta content={title} property="og:title" />
+        <meta content={description} name="description" />
+        <meta content={description} property="og:description" />
+        <meta content={url} property="og:url" />
+        <meta content={image} property="og:image" />
+
+        <ArticleJsonLd
+          authorName="Diogo Machado"
+          type="Blog"
+          url={url}
+          title={title}
+          images={[image]}
+          datePublished={props.post.published_at}
+          dateModified={props.post.updated_at}
+          description={description}
+        />
+
         <link rel="icon" href="/favicon.png" />
 
         {props.post.canonical_url && (
