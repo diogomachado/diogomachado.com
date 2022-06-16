@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import CommandBar from '../components/CommandBar'
 import 'remixicon/fonts/remixicon.css'
+import 'prismjs/themes/prism-okaidia.css'
 
 import Router from 'next/router'
 import * as gtag from '../lib/gtag'

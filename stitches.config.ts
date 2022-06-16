@@ -94,7 +94,6 @@ const globalStyles = globalCss({
     maxWidth: '100%',
   },
   code: {
-    background: '#151417',
     borderRadius: '$borderRadius',
     color: '$primary',
     fontFamily: '$code',
@@ -102,6 +101,10 @@ const globalStyles = globalCss({
   },
   ':not(pre) > code': {
     padding: '4px',
+  },
+  hr: {
+    border: 'none',
+    borderBottom: '1px rgb(255 255 255 / 25%) solid',
   },
   blockquote: {
     borderLeft: '4px solid $hover',

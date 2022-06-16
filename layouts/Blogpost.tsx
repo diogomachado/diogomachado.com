@@ -4,9 +4,15 @@ import BlogDate from '../components/BlogDate'
 // import BlogViews from '../components/BlogViews'
 import { Post, PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
+import Prism from 'prismjs'
+import { useEffect } from 'react'
 
 export default function Blogpost({ children }) {
   const { title, image, date, views } = children.props
+
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
 
   return (
     <Wrapper>
