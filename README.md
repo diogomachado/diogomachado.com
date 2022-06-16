@@ -14,3 +14,4 @@ yarn dev
 - CSS in JS: https://stitches.dev/
 - Animations: https://www.framer.com/docs/motionvalue/
 - Icons: https://remixicon.com/
+- Syntax highlighting: https://prismjs.com/
