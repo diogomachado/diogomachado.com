@@ -18,7 +18,6 @@ const Home: NextPage = () => {
           name="description"
           content="Frontend Engineer with 10+ experience building amazing products for web."
         />
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <NavBar />
