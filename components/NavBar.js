@@ -17,6 +17,10 @@ export default function Navbar() {
       icon: 'ri-file-text-line',
       link: '/static/document/resume-diogomachado-v.5.jun.22.pdf',
     },
+    {
+      title: 'Courses',
+      icon: 'ri-live-line',
+    },
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
