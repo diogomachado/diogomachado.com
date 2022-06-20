@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Base from '../layouts/Base'
+import CoursePage from '../layouts/Coursepage'
 import { styled } from '../stitches.config'
 import { motion } from 'framer-motion'
 
@@ -73,8 +73,13 @@ const CoursesWrapper = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   gap: '12px',
+  width: '90%',
   '@bp2': {
     flexDirection: 'row',
+    width: 'auto',
+  },
+  '@bp4': {
+    gap: '24px',
   },
 })
 
@@ -83,7 +88,7 @@ const Course = styled(motion.a, {
   outline: 'none',
   border: 'none',
   cursor: 'pointer',
-  height: '360px',
+  height: '260px',
   backgroundSize: 'contain',
   borderRadius: '12px',
   background: 'rgba(0, 0, 0, 0.5)',
@@ -108,10 +113,13 @@ const CourseTitle = styled('h2', {
   WebkitTextFillColor: 'transparent',
   MozTextFillColor: 'transparent',
   WebkitBoxDecorationBreak: 'clone',
-  fontSize: '2.25rem',
+  fontSize: '1.7rem',
   margin: '0',
   fontFamily: '"Raleway Black Italic", sans-serif',
   paddingBottom: '12px',
+  '@bp2': {
+    fontSize: '2.25rem',
+  },
 })
 
 const CourseIcon = styled('i', {
@@ -126,12 +134,15 @@ const CourseIcon = styled('i', {
 })
 
 const CourseDescription = styled('p', {
-  fontSize: '20px',
+  fontSize: '16px',
   margin: '0',
   color: 'rgba(255, 255, 255, 0.95)',
   fontFamily: '"Raleway Extralight", sans-serif',
+  '@bp2': {
+    fontSize: '20px',
+  },
 })
 
-Courses.getLayout = Base
+Courses.getLayout = CoursePage
 
 export default Courses
