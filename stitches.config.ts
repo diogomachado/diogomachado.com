@@ -50,6 +50,9 @@ const globalStyles = globalCss({
   '*': {
     fontFamily: '$body',
   },
+  '*, *:before, *:after': {
+    boxSizing: 'border-box',
+  },
   'html, body': {
     margin: '0',
     padding: '0',
@@ -127,6 +130,18 @@ const globalStyles = globalCss({
     {
       fontFamily: 'JetBrains Mono ExtraBold',
       src: `url("/static/font/JetBrainsMono-ExtraBold.ttf") format("truetype")`,
+      fontWeight: 'normal',
+      fontStyle: 'bold',
+    },
+    {
+      fontFamily: 'Raleway Black Italic',
+      src: `url("/static/font/Raleway-BlackItalic.ttf") format("truetype")`,
+      fontWeight: 'normal',
+      fontStyle: 'bold',
+    },
+    {
+      fontFamily: 'Raleway Extralight',
+      src: `url("/static/font/Raleway-ExtraLight.ttf") format("truetype")`,
       fontWeight: 'normal',
       fontStyle: 'bold',
     },
