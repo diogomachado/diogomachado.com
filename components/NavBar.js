@@ -45,7 +45,7 @@ export default function Navbar() {
               return (
                 <li key={page.title}>
                   <Link href={path} passHref>
-                    <Anchor>
+                    <Anchor target={page.link ? '_blank' : '_self'}>
                       <NavContainer
                         onHoverStart={() => setHovered(page.title)}
                         onHoverEnd={() => setHovered('')}
