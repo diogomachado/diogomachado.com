@@ -10,7 +10,7 @@ yarn dev
 
 ## Tools
 
-- https://nextjs.org/
+- Framework React: https://nextjs.org/
 - CSS in JS: https://stitches.dev/
 - Animations: https://www.framer.com/docs/motionvalue/
 - Icons: https://remixicon.com/
