@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.7",
     "@stitches/react": "^1.2.8",
     "@tryghost/content-api": "^1.11.0",
     "date-fns": "^2.28.0",

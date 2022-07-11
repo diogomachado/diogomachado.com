@@ -58,6 +58,13 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@lottiefiles/react-lottie-player@^3.4.7":
+  "integrity" "sha512-KqkwRiCQPDNzimsXnNSgeJjJlZQ6Fr9JE3OtZdOaGrXovZJ+zDeZNxIwxID8Up0eAdm4zJjudOSc5EJSiGw9RA=="
+  "resolved" "https://registry.npmjs.org/@lottiefiles/react-lottie-player/-/react-lottie-player-3.4.7.tgz"
+  "version" "3.4.7"
+  dependencies:
+    "lottie-web" "^5.7.8"
+
 "@next/env@12.1.6":
   "integrity" "sha512-Te/OBDXFSodPU6jlXYPAXpmZr/AkG6DCATAxttQxqOWaq6eDFX25Db3dK0120GZrSZmv4QCe9KsZmJKDbWs4OA=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
@@ -1234,6 +1241,11 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
+"lottie-web@^5.7.8":
+  "integrity" "sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA=="
+  "resolved" "https://registry.npmjs.org/lottie-web/-/lottie-web-5.9.6.tgz"
+  "version" "5.9.6"
+
 "lru-cache@^6.0.0":
   "integrity" "sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA=="
   "resolved" "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz"
@@ -1539,7 +1551,7 @@
   dependencies:
     "@reach/observe-rect" "^1.1.0"
 
-"react@^16.0.0 || ^17.0.0", "react@^16.6.3 || ^17.0.0", "react@^16.8.0 || 17.x", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.3.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.0.0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@18.1.0":
+"react@^16.0.0 || ^17.0.0", "react@^16.6.3 || ^17.0.0", "react@^16.8.0 || 17.x", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.3.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.0.0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@16 - 18", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
