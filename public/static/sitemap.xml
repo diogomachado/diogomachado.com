@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.diogomachado.com/</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/static/document/resume-diogomachado-v.5.jun.22.pdf</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/courses</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/box-sizing-css-code-snippet</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-remove-unused-imports-in-vscode</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/introduce-parameter-object</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-i-built-my-personal-website</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/ate-quando-vamos-aceitar-designs-ruins</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-identify-and-begin-test-with-jest-in-your-project-javascript-angular</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/testing-login-with-jest-on-angularfire-using-stub-and-mock</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/command-git-to-ignore-changes-in-a-file</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-rename-a-branch-on-git</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/git-stash-save-locally-your-work-and-navigate-to-another-branch</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/creating-a-custom-network-profile-in-google-chrome-to-test-ui-loading</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/five-months-working-in-beatstars</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/communication-between-different-cultures</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/using-dynamic-factory-in-angular</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/creating-login-and-logout-as-a-new-command-in-cypress-to-test-tests-that-needs-authentication</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-sort-an-object-using-no-asci</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/understanding-directives-in-angular-framework</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/whats-the-rxjs-library-and-observable-in-angular-framework</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/what-are-the-things-that-composited-a-basic-react-component</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-understand-the-basic-universe-around-react</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/improvement-google-fonts-using-preconnect</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-search-easily-in-terminal-using-hyper-terminal</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-add-logs-on-your-debug-without-use-console-log</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/i-started-to-build-a-player-customized-of-the-spotify</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-inject-a-javascript-lib-within-a-react-project-spotify-playback-sdk</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/dealing-with-the-frustration-into-it-sector</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-i-used-the-lottie-with-succed</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/ionic-input-with-mask</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/review-book-designing-for-touch-by-josh-clark</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/my-favorite-architecture</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-to-clear-your-project-ios-android-react-native-tips</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-create-an-icon-android-for-your-application-react-native-using-android-studio</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-in-app-purchase-works</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-run-your-app-react-on-iphone-without-metro-server-running</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/resolving-react-native-run-android-with-gradle</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/leia-magazine-app</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/compiling-different-files-index-html-in-angular-using-environment-variables</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/details-about-a-beautiful-work-not-launched</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/you-need-more-attention-with-fingers-in-your-application</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-i-use-cypress-io-for-repetitive-tests-in-large-forms-2</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/the-power-of-drawing-thinks-and-things</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/how-angular-is-helping-to-build-amazing-solutions-for-unimed-sul-capixaba</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diogomachado.com/articles/dizimo-online-app</loc>
+  <lastmod>2022-07-19T13:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
