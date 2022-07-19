@@ -59,7 +59,7 @@ export default function CommandBar(props) {
       keywords: 'go-resume',
       section: 'Go To',
       perform: () =>
-        router.push('/static/document/resume-diogomachado-v.5.jun.22.pdf'),
+        router.push('/static/document/resume-diogomachado-v.19.jul.22.pdf'),
       icon: <Icon className="ri-file-text-line" />,
     },
     {
