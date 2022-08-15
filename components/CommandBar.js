@@ -19,7 +19,7 @@ export default function CommandBar(props) {
     {
       id: 'copy',
       name: 'Copy URL',
-      shortcut: ['u'],
+      shortcut: ['g', 'u'],
       keywords: 'copy-url',
       section: 'General',
       perform: () => navigator.clipboard.writeText(window.location.href),
@@ -28,7 +28,7 @@ export default function CommandBar(props) {
     {
       id: 'email',
       name: 'Send Email',
-      shortcut: ['e'],
+      shortcut: ['g', 'e'],
       keywords: 'send-email',
       section: 'General',
       perform: () => window.open('mailto:diogo@diogomachado.com', '_blank'),

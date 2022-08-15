@@ -29,6 +29,14 @@ export default class extends Document {
           />
           <script
             dangerouslySetInnerHTML={{
+              __html: `window.AppcuesSettings = {
+              enableURLDetection: true
+            };`,
+            }}
+          />
+          <script async src="//fast.appcues.com/121124.js"></script>
+          <script
+            dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
