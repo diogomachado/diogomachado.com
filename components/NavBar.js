@@ -15,7 +15,7 @@ export default function Navbar() {
     {
       title: 'Resume',
       icon: 'ri-file-text-line',
-      link: '/static/document/resume-diogomachado-v.19.jul.22.pdf',
+      link: '/static/document/resume-diogomachado-en.pdf',
     },
     {
       title: 'Courses',

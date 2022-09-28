@@ -58,8 +58,7 @@ export default function CommandBar(props) {
       shortcut: ['g', 'r'],
       keywords: 'go-resume',
       section: 'Go To',
-      perform: () =>
-        router.push('/static/document/resume-diogomachado-v.19.jul.22.pdf'),
+      perform: () => router.push('/static/document/resume-diogomachado-en.pdf'),
       icon: <Icon className="ri-file-text-line" />,
     },
     {
