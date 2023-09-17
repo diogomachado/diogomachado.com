@@ -1,9 +1,9 @@
-import { GetStaticProps } from 'next/types'
 import { ArticleJsonLd } from 'next-seo'
-import { getSinglePost, getPosts } from '../../lib/posts'
-import Blogpost from '../../layouts/Blogpost'
 import Head from 'next/head'
+import { GetStaticProps } from 'next/types'
 import BlogDate from '../../components/BlogDate'
+import Blogpost from '../../layouts/Blogpost'
+import { getPosts, getSinglePost } from '../../lib/posts'
 import { styled } from '../../stitches.config'
 
 interface PropsGhostPost {
@@ -14,11 +14,23 @@ interface Post {
   title: string
   excerpt: string
   canonical_url: string
+  coverImage?: coverImage
   feature_image: string
   slug?: string
-  html?: string
-  published_at: string
-  updated_at: string
+  content: Content
+  createdAt: string
+  updatedAt: string
+  publishedAt: string
+}
+
+interface coverImage {
+  url: string
+  width: string
+  height: string
+}
+
+interface Content {
+  html: string
 }
 
 // PostPage page component
@@ -27,9 +39,10 @@ const PostPage = (props: PropsGhostPost) => {
     title: `${props.post.title} // Diogo Machado`,
     excerpt: props.post.excerpt || '',
     canonical_url: `https://diogomachado.com/articles/${props.post.slug}`,
-    feature_image: props.post.feature_image,
-    published_at: props.post.published_at,
-    updated_at: props.post.updated_at,
+    feature_image: props.post.coverImage?.url ?? '',
+    createdAt: props.post.createdAt,
+    publishedAt: props.post.publishedAt,
+    updatedAt: props.post.updatedAt,
   }
 
   // Render post title and content in the page from props
@@ -49,8 +62,8 @@ const PostPage = (props: PropsGhostPost) => {
           url={seo.canonical_url}
           title={seo.title}
           images={[seo.feature_image]}
-          datePublished={seo.published_at}
-          dateModified={seo.updated_at}
+          datePublished={seo.publishedAt}
+          dateModified={seo.updatedAt}
           description={seo.excerpt}
         />
 
@@ -61,10 +74,10 @@ const PostPage = (props: PropsGhostPost) => {
         )}
       </Head>
 
-      <BlogDate dateString={props.post.published_at} />
+      <BlogDate dateString={props.post.publishedAt} />
 
       <PostTitle>{props.post.title}</PostTitle>
-      <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+      <div dangerouslySetInnerHTML={{ __html: props.post.content.html }} />
     </>
   )
 }

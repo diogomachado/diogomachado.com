@@ -1,6 +1,6 @@
 const AllPosts = `
   query AllPosts {
-    posts(orderBy: publishedAt_DESC) {
+    posts(orderBy: publishedAt_ASC) {
       id
       excerpt
       slug

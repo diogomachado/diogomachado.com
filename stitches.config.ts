@@ -95,6 +95,7 @@ const globalStyles = globalCss({
   },
   img: {
     maxWidth: '100%',
+    height: 'auto',
   },
   code: {
     borderRadius: '$borderRadius',
