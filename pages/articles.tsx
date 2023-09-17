@@ -1,20 +1,21 @@
-import { getPosts } from '../lib/posts'
-
-import type { GetStaticProps, NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import Base from '../layouts/Base'
-import { styled } from '../stitches.config'
 import BlogDate from '../components/BlogDate'
+import Base from '../layouts/Base'
+import { getPosts } from '../lib/posts'
+import { styled } from '../stitches.config'
 
-type PropsArticleItem = {
+type Post = {
   id: string
   title: string
-  published_at: string
+  excerpt?: string
+  date: string
+  publishedAt: string
   slug: string
 }
 
 type PropsArticle = {
-  posts: PropsArticleItem[]
+  posts: Post[]
 }
 
 const Articles: NextPage<PropsArticle> = props => {
@@ -29,7 +30,7 @@ const Articles: NextPage<PropsArticle> = props => {
         {props.posts.map(post => (
           <ArticleItem key={post.id} href={`articles/${post.slug}`}>
             <ArticlePublishedAt>
-              <BlogDate dateString={post.published_at} />
+              <BlogDate dateString={post.date} />
             </ArticlePublishedAt>
             <ArticleTitle>{post.title}</ArticleTitle>
           </ArticleItem>
@@ -78,5 +79,4 @@ const ArticleTitle = styled('h1', {
 })
 
 Articles.getLayout = Base
-
 export default Articles

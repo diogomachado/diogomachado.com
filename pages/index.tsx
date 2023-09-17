@@ -1,13 +1,11 @@
+import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import developerGuy from '../public/static/img/developer-guy.png'
-import { styled } from '../stitches.config'
-import { Wrapper } from '../components/Wrapper'
-import { PostMain } from '../components/Post'
 import { ButtonCommand } from '../components/ButtonCommand'
 import NavBar from '../components/NavBar'
-import { motion } from 'framer-motion'
+import { PostMain } from '../components/Post'
+import { Wrapper } from '../components/Wrapper'
+import { styled } from '../stitches.config'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +14,7 @@ const Home: NextPage = () => {
         <title>Diogo Machado </title>
         <meta
           name="description"
-          content="Frontend Engineer with 10+ experience building amazing products for web."
+          content="Frontend Engineer with 12 years experience building amazing products for web."
         />
       </Head>
 
@@ -43,18 +41,12 @@ const Home: NextPage = () => {
             Diogo Machado
           </GradientTitle>
           <DescriptionMain>
-            Senior Frontend Engineer with 10+ experience building amazing
-            products for web.
+            <strong style={{ color: '#B3B3B3' }}>Frontend Engineer</strong> with{' '}
+            <strong style={{ color: '#B3B3B3' }}>12 years</strong> experience
+            building amazing products for web.
           </DescriptionMain>
           <ButtonCommand />
         </AboutContainer>
-
-        <ImageWrapper
-          animate={{ y: 20 }}
-          transition={{ type: 'spring', stiffness: 20 }}
-        >
-          <Image layout="responsive" src={developerGuy} alt="Developer Guy" />
-        </ImageWrapper>
       </HomeContainer>
     </Wrapper>
   )
