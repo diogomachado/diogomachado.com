@@ -1,11 +1,11 @@
-import { styled } from '../stitches.config'
-import Navbar from '../components/NavBar'
 import BlogDate from '../components/BlogDate'
+import Navbar from '../components/NavBar'
+import { styled } from '../stitches.config'
 // import BlogViews from '../components/BlogViews'
-import { Post, PostMain, PostContent, PostContainer } from '../components/Post'
-import { Wrapper } from '../components/Wrapper'
 import Prism from 'prismjs'
 import { useEffect } from 'react'
+import { Post, PostContainer, PostContent, PostMain } from '../components/Post'
+import { Wrapper } from '../components/Wrapper'
 
 export default function Blogpost({ children }) {
   const { title, image, date, views } = children.props

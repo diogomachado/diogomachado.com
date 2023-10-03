@@ -30,13 +30,6 @@ const Home: NextPage = () => {
               duration: 1,
               type: 'tween',
             }}
-            css={{
-              backgroundImage: `linear-gradient(
-                180deg, 
-                $blue 0%, 
-                $purple 84.9%
-              );`,
-            }}
           >
             Diogo Machado
           </GradientTitle>
@@ -66,13 +59,8 @@ const DescriptionMain = styled('p', {
 })
 
 const GradientTitle = styled(motion.h1, {
-  backgroundSize: '100%',
-  backgroundClip: 'text',
-  WebkitBackgroundClip: 'text',
-  MozBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  MozTextFillColor: 'transparent',
-  WebkitBoxDecorationBreak: 'clone',
+  color: '#fff',
+  fontFamily: 'Gabarito Semibold',
 })
 
 const AboutContainer = styled('div', {

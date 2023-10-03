@@ -17,7 +17,7 @@ export const {
       purple: 'rgba(241, 135, 251, 0.2553)',
       yellow: 'rgba(255, 255, 0, 0.69)',
       pink: 'rgba(255, 0, 255, 0.69)',
-      background: '#11001C',
+      background: '#09090b',
       secondary: '#F5F5F5',
       textColor: 'rgba(255, 255, 255, 0.38)',
       hover: '#212024',
@@ -143,6 +143,12 @@ const globalStyles = globalCss({
     {
       fontFamily: 'Raleway Extralight',
       src: `url("/static/font/Raleway-ExtraLight.ttf") format("truetype")`,
+      fontWeight: 'normal',
+      fontStyle: 'bold',
+    },
+    {
+      fontFamily: 'Gabarito Semibold',
+      src: `url("/static/font/Gabarito-SemiBold.ttf") format("truetype")`,
       fontWeight: 'normal',
       fontStyle: 'bold',
     },
